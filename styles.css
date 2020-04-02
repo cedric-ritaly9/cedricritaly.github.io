@@ -1,0 +1,231 @@
+header {
+  /*min-height: 127px;
+  margin-bottom: 40px;*/
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-size: cover;
+  background-color: #242843;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 480px;
+}
+
+#wrapper {
+  max-width: 970px;
+}
+
+.profile-title {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 8px;
+}
+
+.profile-desc {
+  display: inline-block;
+  color: #848484;
+  margin-bottom: 8px;
+}
+
+.social-icons li {
+  display: inline-block;
+  padding: 0px 9px;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+
+img.avatar {
+  margin-top: 20px;
+}
+
+.info ul {
+  display: inline-block;
+  text-align: left;
+}
+
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 35px;
+}
+.info p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px !important;
+}
+
+.interests > div {
+  padding: 0px 5px;
+}
+
+.cardHovering {
+    filter: grayscale(100%); /* IE5+ */
+    -webkit-filter: grayscale(100%); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;
+  }
+
+.cardHovering:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+  
+}
+
+.textprojet {
+    text-shadow: 1px 1px 1px black;
+  }
+
+  /* label focus color */
+  .input-field input:focus + label {
+    color: #34414b !important;
+  }
+
+  /* label underline focus color */
+  .row .input-field input:focus {
+    border-bottom: 1px solid #34414b !important;
+    box-shadow: 0 1px 0 0 #34414b !important
+  }
+
+  /* label focus color */
+  .input-field textarea:focus + label {
+    color: #34414b !important;
+  }
+
+  /* label underline focus color */
+  .row .input-field textarea:focus {
+    border-bottom: 1px solid #34414b !important;
+    box-shadow: 0 1px 0 0 #34414b !important
+  }
+
+  *{box-sizing:border-box}
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+display: none
+
+}
+
+
+/* englobe le slider */
+
+.cadre_diapo{
+
+max-width: 600px;
+margin: 2rem auto;
+overflow: hidden;
+  
+  }
+
+.interieur_diapo{
+  
+display: flex;
+width: 400%;
+transition: transform .6s ease-in-out
+  
+  }
+
+.description{
+
+position: relative;
+
+}
+
+.description span{
+
+position: absolute;
+left: 0;
+top: 2%;
+font-size: 75%;
+display: flex;
+padding: .5rem;
+justify-content: center;
+color: white;
+background: hsla(0,0%,0%,.35)
+  
+  }
+  
+  
+#votre_id1:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(0)
+
+}/*image 1*/
+
+#votre_id2:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-25%)
+
+}/*image 2*/
+
+#votre_id3:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-50%)
+
+}/*image 3*/
+
+#votre_id4:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-75%)
+
+}/*image 4*/
+
+
+
+
+
+/*navigation avec images miniatures*/
+.navigation_diapo{
+  
+display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+list-style-type: none;
+margin: 0;
+padding: 0
+  
+  }
+
+.navigation_diapo li {
+  
+  padding: .25rem;
+  
+  }
+
+.navigation_diapo img{
+
+border: 3px solid white;
+box-shadow:0 0 5px hsla(0,0%,0%,.4);
+
+  
+  }
+  
+  
+  @media (min-width:31.25rem){
+    
+    .description span{
+      
+      font-size: initial
+    
+    }
+  
+  }
